@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Guave\InsertModuleByAliasBundle\EventListener;
 
 use Contao\Controller;
