@@ -7,7 +7,7 @@ The DCA of tl_module is extended by a field "alias".
 
 ## Requirements
 
-- Contao 4.9+ (tested up to 4.13)
+- Contao 4.13+
 - PHP 7.4 or 8.0+
 
 ## Install
