@@ -3,11 +3,7 @@
 namespace Guave\InsertModuleByAliasBundle\EventListener;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
-use Contao\CoreBundle\ServiceAnnotation\Hook;
 
-/**
- * @Hook("loadDataContainer")
- */
 class LoadDataContainerListener
 {
     private const MODULE = 'tl_module';

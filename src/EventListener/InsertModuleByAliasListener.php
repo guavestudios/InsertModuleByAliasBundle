@@ -3,12 +3,10 @@
 namespace Guave\InsertModuleByAliasBundle\EventListener;
 
 use Contao\Controller;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\ModuleModel;
 
-/**
- * @Hook("replaceInsertTags")
- */
 class InsertModuleByAliasListener
 {
     public const TAG = 'insert_module_alias';
