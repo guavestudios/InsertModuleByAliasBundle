@@ -3,8 +3,6 @@
 namespace Guave\InsertModuleByAliasBundle\EventListener;
 
 use Contao\Controller;
-use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
-use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\ModuleModel;
 
 class InsertModuleByAliasListener
