@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Guave\InsertModuleByAliasBundle\EventListener;
 
 use Contao\CoreBundle\DataContainer\PaletteManipulator;
@@ -14,14 +16,15 @@ class LoadDataContainerListener
             return;
         }
 
-        foreach ($GLOBALS['TL_DCA'][self::MODULE]['palettes'] as $name => $palette) {
+        foreach (array_keys($GLOBALS['TL_DCA'][self::MODULE]['palettes']) as $name) {
             if ($name === '__selector__') {
                 continue;
             }
 
             PaletteManipulator::create()
                 ->addField('alias', 'expert_legend')
-                ->applyToPalette($name, self::MODULE);
+                ->applyToPalette($name, self::MODULE)
+            ;
         }
     }
 }
