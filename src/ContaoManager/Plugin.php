@@ -16,8 +16,7 @@ class Plugin implements BundlePluginInterface
     {
         return [
             BundleConfig::create(GuaveInsertModuleByAliasBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class])
-                ->setReplace(['aliasinserttag']),
+                ->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }

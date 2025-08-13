@@ -2,3 +2,11 @@ services:
   _defaults:
     autoconfigure: true
     autowire: true
+
+  Guave\InsertModuleByAliasBundle\:
+    resource: ../src
+    exclude: ../src/{ContaoManager,DependencyInjection}
+
+  Guave\InsertModuleByAliasBundle\EventListener\:
+    resource: ../src/EventListener
+    public: true
